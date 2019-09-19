@@ -1,0 +1,14 @@
+.loginPage {
+  height: 85vh;
+  background: #f4f4f4;
+}
+
+
+mat-form-field {
+  width: 300px;
+}
+
+button {
+  margin-top: 20px;
+  width: 200px;
+}

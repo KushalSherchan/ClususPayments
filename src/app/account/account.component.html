@@ -1,0 +1,20 @@
+<nav mat-tab-nav-bar>
+    <a mat-tab-link
+       routerLink="/account/accountForm"
+       routerLinkActive #one="routerLinkActive"
+       [active]="one.isActive"
+      >
+      Create Account
+    </a>
+    <a mat-tab-link
+       routerLink="/account/listAccount"
+       routerLinkActive #two="routerLinkActive"
+       [active]="two.isActive"
+       >
+      List Account
+    </a>
+</nav>
+
+<router-outlet></router-outlet>
+
+

@@ -1,0 +1,46 @@
+<div class="container mt-4">
+  <h2>How May We Help You ?</h2>
+  <hr>
+  <div class="row mt-4 background ownClass">
+    <div class="col-md-6 my-3">
+        <section fxLayout fxLayoutAlign="center">
+          <mat-card fxFlex.xs="100%" fxFlex="400px">
+            <mat-card-title fxLayoutAlign = "center center">
+              <i class='fas fa-user-friends mr-3' style='font-size:36px'></i>
+              <span class="custom">Accounts</span>
+            </mat-card-title>
+            <mat-card-content fxLayout="column"fxLayoutAlign = "center center">
+              <div class="mt-4">
+                <button mat-raised-button class="ownColor"
+                routerLink="account/accountForm">Create Account</button>
+              </div>
+              <div class="mt-3">
+                <button mat-raised-button class="ownColor"
+                routerLink="account/listAccount">List Account</button>
+              </div>
+             </mat-card-content>
+          </mat-card>
+        </section>
+    </div>
+    <div class="col-md-6 my-3">
+        <section fxLayout fxLayoutAlign="center">
+          <mat-card fxFlex.xs="100%" fxFlex="400px">
+            <mat-card-title fxLayoutAlign = "center center">
+              <i style='font-size:36px' class='fas mr-3'>&#xf0d6;</i>
+              <span class="custom">Payments</span>
+            </mat-card-title>
+            <mat-card-content fxLayout="column"fxLayoutAlign = "center center">
+              <div class="mt-4">
+                <button mat-raised-button class="ownColor"
+                routerLink="payment/paymentForm">Payment Form</button>
+              </div>
+              <div class="mt-3">
+                <button mat-raised-button class="ownColor"
+                routerLink="/payment/listPayment">List Payments</button>
+              </div>
+              </mat-card-content>
+          </mat-card>
+        </section>
+    </div>
+  </div>
+</div>

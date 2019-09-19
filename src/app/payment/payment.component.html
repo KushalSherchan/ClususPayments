@@ -1,0 +1,17 @@
+<nav mat-tab-nav-bar>
+  <a mat-tab-link
+     routerLink="/payment/paymentForm"
+     routerLinkActive #one="routerLinkActive"
+     [active]="one.isActive">
+    Make a Payment
+  </a>
+  <a mat-tab-link
+     routerLink="/payment/listPayment"
+     routerLinkActive #two="routerLinkActive"
+     [active]="two.isActive">
+    List Payments
+  </a>
+</nav>
+<router-outlet></router-outlet>
+
+

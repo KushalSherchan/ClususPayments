@@ -1,0 +1,76 @@
+.navbar {
+  background: #ccc;
+  color: black;
+}
+
+.navbar {
+  padding-bottom:0;
+}
+.main-heading {
+  font-size: 1.3rem;
+}
+
+.active {
+  background: black;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  transition: all 0.3s linear;
+}
+
+img {
+  height: 60px;
+}
+
+@media only screen and (max-width: 800px) {
+  .margin-right {
+    margin-right: 10px !important;
+  }
+
+  .margin-left {
+    margin-left: 10px !important;
+  }
+
+ .absolutePos {
+  position: relative !important;
+ }
+}
+
+.fontSize {
+  font-size: 24px;
+  background: skyblue;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.margin-right {
+  margin-right: 200px;
+}
+
+.margin-left {
+  margin-left: 150px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Fixing Position and the title */
+.absolutePos {
+  position: absolute;
+  top: 0px;
+  left: -40px;
+ }
+
+
+.relativePos {
+  position: relative;
+}
+
+
+

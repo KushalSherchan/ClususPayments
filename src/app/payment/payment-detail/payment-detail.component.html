@@ -1,0 +1,20 @@
+<div class="account-detail">
+  <section class="pt-5" fxLayout fxLayoutAlign="center">
+    <mat-card  fxFlex.xs="450px" fxFlex.md="600px" fxFlex.lg="800px">
+      <mat-card-title fxLayoutAlign = "center center">
+        <i style='font-size:36px' class='fas mr-3'>&#xf0d6;</i>
+        <span class="custom">Payment Detail</span>
+      </mat-card-title>
+      <hr>
+      <mat-card-content fxLayout="column" *ngIf="payment">
+          <h5>Source Account: {{ payment.sourceAccountNumber }}</h5>
+
+          <h5>Destination Account: {{payment.destinationAccountNumber}}</h5>
+          <h5>Id : {{ payment.id }} </h5>
+          <h5>Amount: {{ payment.amount }}</h5>
+          <h5>Currencty: {{ payment.currencyCode }}</h5>
+          <h5>Description: {{ payment.paymentDescription }}</h5>
+        </mat-card-content>
+    </mat-card>
+  </section>
+</div>

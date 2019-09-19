@@ -1,0 +1,8 @@
+hr {
+  border-top: 2px solid silver;
+}
+
+.account-detail {
+  height: 80vh;
+  background: #f4f4f4;
+}

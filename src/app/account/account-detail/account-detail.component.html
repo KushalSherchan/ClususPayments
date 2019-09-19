@@ -1,0 +1,20 @@
+<div class="account-detail">
+  <section class="pt-5" fxLayout fxLayoutAlign="center">
+    <mat-card fxFlex.xs="100%" fxFlex.xs="450px" fxFlex.md="600px" fxFlex.lg="800px">
+      <mat-card-title fxLayoutAlign = "center center">
+        <i class='fas fa-user-friends mr-3' style='font-size:36px'></i>
+        <span class="custom">Account Detail</span>
+      </mat-card-title>
+      <hr>
+      <mat-card-content fxLayout="column" *ngIf="accountDetail">
+          <h5>Name: {{accountDetail.accountHolderName}}</h5>
+
+          <h5>Account No: {{accountDetail.accountNumber}}</h5>
+          <h5>Account id: {{accountDetail.id}}</h5>
+          <h5>Phone No: {{accountDetail.accountHolderPhoneNumber}}</h5>
+          <h5>Account Description: {{accountDetail.accountDescription}}</h5>
+        </mat-card-content>
+    </mat-card>
+  </section>
+</div>
+

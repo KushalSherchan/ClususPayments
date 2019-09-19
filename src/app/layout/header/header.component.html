@@ -1,0 +1,21 @@
+<div class="navbar">
+  <div class="link margin-left"><h5>
+    <a routerLink="/"
+       routerLinkActive="active"
+       [routerLinkActiveOptions]="{exact:true}">Home</a></h5></div>
+  <div class="main-heading mx-auto">
+    <div class="d-flex  align-items-mid relativePos">
+      <img class="absolutePos  d-none d-md-block" src="../../assets/img/logo/bank.png" alt="">
+      <p class="mr-auto fontSize d-md-none d-sm">CLUSUS</p>
+      <p class="mr-auto ml-2 fontSize d-none d-md-block">CLUSUS BANK LTD</p>
+    </div>
+  </div>
+  <div *ngIf="!isLogin" class="link margin-right"><h5>
+    <a routerLink="/login"
+       routerLinkActive="active">
+       Login</a></h5>
+  </div>
+  <div *ngIf="isLogin" class="link margin-right"><h5>
+    <a (click)="logOut()">LogOut</a></h5>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+<div class="mt-3 ownSpace">
+  <form (ngSubmit)="onFormSubmit(form)" #form="ngForm" autocomplete="off">
+    <div><h4 class="text-center"><strong>Account Form</strong></h4></div>
+    <hr>
+    <div class="form-group">
+      <label for="name">Name<span class="redColor">*</span></label>
+      <input type="text"
+             class="form-control"
+             id="name"
+             autocomplete="off"
+             ngModel
+             name = "fullName"
+             required
+             #name = "ngModel"
+             />
+      <div *ngIf= "name.invalid && name.touched">
+        <p class="warnings">Enter your name</p>
+      </div>
+    </div>
+    <div class="form-group mt-3">
+      <label for="description">Description</label>
+      <input type="text"
+             class="form-control"
+             id="description"
+             ngModel
+             autocomplete="off"
+             name = "description"
+             />
+    </div>
+    <div class="form-group mt-3">
+      <label for="Pnumber">Phone Number</label>
+      <input type="text"
+             class="form-control"
+             id="Pnumber"
+             ngModel
+             name = "phoneNumber"
+             />
+    </div>
+    <div class="form-group mt-3">
+      <label for="AccountNumber">Account Number<span class="redColor">*</span>
+       (6 digits required)
+      </label>
+      <input type="number"
+             class="form-control"
+             id="AccountNumber"
+             [(ngModel)] = "accountNumber"
+             name = "accountNumber"
+             required
+             #account = "ngModel"
+             />
+         <div *ngIf="account.touched && account.invalid">
+          <p class="warnings">Please enter a 6 digit account</p>
+        </div>
+    </div>
+    <button class="btn btn-success"
+            type="submit"
+            [disabled]="form.invalid ||
+                        (accountNumber.toString().length !== 6)">
+            Add Account
+    </button>
+  </form>
+</div>
+

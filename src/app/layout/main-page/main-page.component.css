@@ -1,0 +1,29 @@
+hr {
+  border-top: 3px solid #ccc;
+}
+
+i.fas {
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 3px 2px 2px #ccc;
+  padding: 0.5em 0.6em;
+  background-color: aquamarine;
+}
+
+.background {
+  background-color: #f4f4f4;
+}
+
+.custom {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+button {
+  width: 180px;
+  font-size: 1.1rem;
+}
+
+.ownColor {
+  background: #ccc;
+}
